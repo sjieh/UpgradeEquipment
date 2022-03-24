@@ -110,7 +110,7 @@ namespace UpgradeEquipment_hrr.UI
 
 			if (power < 10)
 			{
-				mult = 1f + 0.04f * power;
+				mult = 1f + 0.03f * power;
 			}
 			else
 			{
