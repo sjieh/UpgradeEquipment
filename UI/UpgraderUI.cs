@@ -180,6 +180,12 @@ namespace UpgradeEquipment_hrr.UI
 							// this line saves the item's tier after reforging, but conflicts with Calamity
 							// do i care enough to find a workaround? no
 							// ItemLoader.PostReforge(_vanillaItemSlot.Item);
+							
+							// Heya, long time upgmod fan here... 
+							// there is quite an easy fix which is to replace PostReforce with PreReforge... 
+							// not too sure if this breaks anything but it works with calam..
+							// -Nyxx
+							// hmu on discord -> Nyxxonial#9999
 
 							CombatText.NewText(new Rectangle((int)Main.LocalPlayer.position.X, (int)Main.LocalPlayer.position.Y, 5, 0), PrefixHelper.GetTierColor(upgradeTier), _vanillaItemSlot.Item.Name + " + " + (upgradeTier + 1), false, false);
 							Main.PlaySound(SoundID.Item37, -1, -1);
